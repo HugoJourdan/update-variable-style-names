@@ -5,3 +5,14 @@ Update Variable Style Names PreFilter to overwrite variable style names for a sp
 Usage: Add "UpdateVariableStyleNames" as a PreFilter in Glyphs in a Variable Instance, with the name you want to remove as an argument.
 
 Example: `UpdateVariableStyleNames;Condensed` will remove all occurrences of "Condensed" in variable style names in instances at export.
+
+```
+{
+customParameters = (
+{
+name = Filter;
+value = "UpdateVariableStyleNames;Condensed";
+}
+);
+}
+```
